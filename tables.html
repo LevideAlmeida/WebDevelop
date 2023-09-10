@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 800px;
+        }
+
+        table caption {
+            text-align: left;
+            padding-bottom: 10px;
+            font-size: 17px;
+        }
+
+        table td,
+        table th {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 7px 14px;
+            text-align: center;
+        }
+
+        tfoot td,
+        table th {
+            background: #ddd;
+        }
+
+        tfoot td {
+            font-style: italic;
+        }
+
+        .responsive-table {
+            max-width: 100%;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div class="responsive-table">
+        <table>
+            <caption>
+                Descrição
+            </caption>
+            <thead>
+                <tr>
+                    <th>Titulo 1</th>
+                    <th>Titulo 2</th>
+                    <th>Titulo 3</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Corpo 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum exercitationem
+                        provident est? Inventore rerum dolorum suscipit eaque vero, iusto ipsam dolore quod labore vitae
+                        voluptates natus laboriosam esse blanditiis sit mollitia, quasi placeat excepturi voluptate ut
+                        nihil deserunt, animi iste explicabo! Autem quibusdam fugiat excepturi commodi et nisi sapiente.
+                        Aliquam!</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" rowspan="2">Corpão</td>
+                    <td>Corpo 3</td>
+                </tr>
+
+
+                <tr>
+                    <td>Corpo 3</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </div>
+
+    <p>By: Levi de Almeida</p>
+</body>
+
+</html>
