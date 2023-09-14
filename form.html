@@ -1,0 +1,138 @@
+<!-- https://www.w3schools.com/html/html_form_input_types.asp -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        label {
+            cursor: text;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <!-- type="text" to texts-->
+        <p>
+            <label>
+                Nome:
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </label>
+        </p>
+
+        <p>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="seu-nome" placeholder="Seu sobrenome">
+        </p>
+
+        <!-- type="checkbox" to checkbox-->
+        <p>
+            <label for="desenvolvedor">Você é um desenvolvedor?</label>
+            <input type="checkbox" id="desenvolvedor" name="dev"><br>
+
+            <label for="desenvolvedor">Você é formado?</label>
+            <input type="checkbox" id="webdev" name="webdev">
+        </p>
+
+        <!-- type="radio" to one choice checkbox-->
+        <p>
+            Gênero:<br>
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="feminino" name="genero" value="feminino" required><br>
+
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+        </p>
+
+        <!-- type="date" to input dates-->
+        <p>
+            <label for="nascimento">Ano de nascimento: </label>
+            <input type="date" id="nascimento">
+        </p>
+
+        <!-- type="datetime-local" to input dates and times-->
+        <p>
+            <label for="data">Data:</label>
+            <input type="datetime-local" id="data" value="2023-09-12T19:53">
+        </p>
+
+        <!-- type="time" for times-->
+        <p>
+            <label for="time">Hora:</label>
+            <input type="time" id="time" value="11:33">
+        </p>
+
+        <!-- type="color" for colors-->
+        <p>
+            <label for="color">Cor preferida:</label>
+            <input type="color" id="color">
+        </p>
+
+        <!-- type="email" for e-mails-->
+        <p>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="ex.: nome123@gmail.com" required>
+        </p>
+
+        <!-- type="file" to send files-->
+        <p>
+            <label for="file">Insira um arquivo</label>
+            <!-- use "accept" to restrict file types -->
+            <input type="file" id="file" accept=".py, .png" multiple>
+        </p>
+
+        <!-- type="number" for nunbers-->
+        <p>
+            <label for="number">Numero:</label>
+            <input type="number" id="number" placeholder="Digite um número:" min="0" max="50" step="5">
+        </p>
+
+        <!-- type="range"-->
+        <p>
+            <label for="range">Range:</label>
+            <input type="range" id="range" min="0" max="10">
+        </p>
+
+        <!-- type="url"-->
+        <p>
+            <label for="url">Sua url:</label>
+            <input type="url" id="url" placeholder="url">
+        </p>
+
+        <!-- type="search"-->
+        <p>
+            <label for="search">Sua busca:</label>
+            <input type="search" id="search" placeholder="search">
+        </p>
+
+        <p>
+            <label for="select">Selecione um item:</label>
+            <select name="select" id="select">
+                <optgroup label="Grupo 1">
+                    <option value="1">Item 1</option>
+                    <option value="2">Item 2</option>
+                    <option value="3">Item 3</option>
+                </optgroup>
+
+                <optgroup label="Grupo 2">
+                    <option value="1" label="Item 1"></option>
+                    <option value="2" label="Item 2"></option>
+                    <option value="3" label="Item 3"></option>
+                </optgroup>
+
+            </select>
+        </p>
+
+
+        <p>
+            <button type="reset">Reset</button>
+            <button type="submit">Enviar</button>
+        </p>
+
+    </form>
+</body>
+
+</html>
