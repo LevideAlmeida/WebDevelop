@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+}
+
+body {
+    background-color: #000000;
+}
+
+p,
+h2 {
+    color: purple;
+    width: 70%;
+}
+
+body div section p,
+body div section h2 {
+    color: blue;
+    width: 50%;
+}
+
+.heading {
+    color: red;
+    font-size: 40px;
+}
+
+.color-red {
+    color: red;
+}
+
+.content h2,
+.content p {
+    color: chartreuse;
+}
+
+.pai .filha {
+    color: white;
+}
+
+.pai h2~p {
+    color: brown;
+}
+
+.pai h2+p {
+    color: cadetblue;
+}
