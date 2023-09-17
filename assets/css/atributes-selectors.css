@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+[checked] {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+[my-atribute] {
+    font-size: 50px;
+    color: red;
+}
+
+[my-atribute="blue"] {
+    color: blue;
+}
+
+[my-atribute~="valor2"] {
+    width: 300px;
+    color: blueviolet;
+}
+
+[my-atribute*="valor1 valor2 valor3"] {
+    width: 300px;
+    color: crimson;
+    background: black;
+}
