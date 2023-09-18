@@ -1,0 +1,36 @@
+ul li::before {
+    content: " - ";
+    background: red;
+    color: blue;
+}
+
+ul li::after {
+    content: " - ";
+    background: blue;
+    color: red;
+}
+
+p {
+    font-size: 12px;
+    width: 50%;
+}
+
+p::first-letter {
+    font-size: 50px;
+    color: red;
+    float: left;
+    margin: 0px 10px 10px 0px;
+}
+
+p::first-line {
+    background-color: yellow;
+}
+
+p::selection {
+    color: red;
+    background-color: yellow;
+}
+
+.insert::placeholder {
+    color: red;
+}
