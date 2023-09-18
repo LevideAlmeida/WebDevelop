@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    transition: all 1s ease-in-out;
+    margin: auto;
+}
+
+.heading:hover {
+    background: red;
+}
+
+a:link {
+    color: deeppink;
+}
+
+a:visited {
+    color: firebrick;
+}
+
+a:hover {
+    background-color: darkslateblue;
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    background-color: darkslategray;
+}
+
+input {
+    margin-left: 0.5rem;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    outline: none;
+}
+
+input:disabled {
+    background-color: red;
+    border: 1px solid black;
+    cursor: not-allowed;
+}
+
+input:checked+h2 {
+    background: blue;
+}
+
+input:not(:checked)+h2 {
+    background: rgb(255, 0, 217);
+}
+
+input:required {
+    margin-bottom: 1rem;
+    box-shadow: 1px 1px 10px rgb(0, 0, 255);
+    border: 0;
+}
+
+p {
+    width: 60%;
+}
+
+p:not(.meio) {
+    color: blue;
+}
