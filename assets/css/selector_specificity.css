@@ -1,0 +1,95 @@
+/*
+specificity priority:
+1. ID (1,0,0)
+2. classes, atributtes and pseudo-classes (0,1,0)
+3. elements and pseudo-elements (0,0,1)
+*/
+
+/*Selector specificity: (0,0,1)*/
+p {
+    background-color: saddlebrown;
+    font-size: 30px;
+}
+
+/*Selector specificity: (0,1,0)*/
+.p {
+    background-color: darkgoldenrod;
+}
+
+/*Selector specificity: (1,0,0)*/
+#p {
+    background-color: red;
+}
+
+/* then #p is applied */
+
+
+
+
+
+
+/*Selector specificity: (1,0,0)*/
+#p2 {
+    background-color: red;
+}
+
+/*Selector specificity: (1,1,0)*/
+#p2.p2 {
+    background-color: teal;
+}
+
+/*Selector specificity: (1,1,1)*/
+p#p2.p2 {
+    background-color: blue;
+}
+
+/* then p#p2.p2 is applied */
+
+
+
+
+
+
+/*Selector specificity: (2,2,2)*/
+body#b.b p#p3.p3 {
+    background-color: chartreuse;
+}
+
+
+
+
+
+
+/*Selector specificity: (1,1,2)*/
+p#p4.p4::selection {
+    background-color: blue;
+}
+
+/*Selector specificity: (1,1,3)*/
+body p#p4.p4::selection {
+    background-color: yellow;
+}
+
+/* them body p#p4.p4 is applied */
+
+
+
+
+
+
+/*Selector specificity: (1,0,0)*/
+#p5 {
+    background-color: aqua;
+}
+
+/*Selector specificity: (2,2,2)*/
+body#b.b p#p5.p5 {
+    background-color: darkgreen;
+}
+
+/*Selector specificity: (0,1,0)*/
+.p5 {
+    background-color: salmon !important;
+}
+
+/* !important sets the style as highest priority, so .p5 is applied*/
