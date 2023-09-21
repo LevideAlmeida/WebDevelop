@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            /* This font-size allows that rem to be used with base 10 multiplications
+                ex: 1rem = 10px
+                    1.6rem = 16px
+            */
+            font-size: 62.5%;
+        }
+
+
+        p {
+            font-size: 2rem;
+            overflow: hidden;
+        }
+
+        .pai {
+            height: 100vh;
+            background-color: turquoise;
+        }
+
+        .red-color {
+            background-color: red;
+        }
+
+        .blue-color {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#one">One</a>
+    <a href="#two">Two</a>
+    <a href="#three">Three</a>
+
+    <div class="pai" id="one">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quibusdam commodi laboriosam nobis asperiores
+            animi molestias odit maiores sed rerum, maxime, nam possimus ipsa iste.
+        </p>
+    </div>
+
+    <div class="pai red-color" id="two">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quibusdam commodi laboriosam nobis asperiores
+            animi molestias odit maiores sed rerum, maxime, nam possimus ipsa iste.</p>
+    </div>
+
+    <div class="pai blue-color" id="three">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quibusdam commodi laboriosam nobis asperiores
+            animi molestias odit maiores sed rerum, maxime, nam possimus ipsa iste.</p>
+    </div>
+</body>
+
+</html>
