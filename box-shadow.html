@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-shadow</title>
+    <style>
+        .block {
+            width: 290px;
+            height: 290px;
+            background: red;
+            margin: 20px;
+            float: left;
+        }
+
+        #border-left {
+            box-shadow: -13px 0 0 0 blue;
+        }
+
+        #border-right {
+            box-shadow: 13px 0 0 0 blue;
+        }
+
+        #border-bottom {
+            box-shadow: 0 13px 0 0 blue;
+        }
+
+        #border-top {
+            box-shadow: 0 -13px 0 0 blue;
+        }
+
+
+        #border-bottom-left {
+            box-shadow: -13px 13px 0 0 blue;
+        }
+
+        #border-bottom-right {
+            box-shadow: 13px 13px 0 0 blue;
+        }
+
+        #border-top-left {
+            box-shadow: -13px -13px 0 0 blue;
+        }
+
+        #border-top-right {
+            box-shadow: 13px -13px 0 0 blue;
+        }
+
+        #blur {
+            box-shadow: 0 0 30px 0 blue;
+        }
+
+        #padding-blur {
+            box-shadow: 0 0 10px 10px blue;
+        }
+
+        #inset-shadow {
+            box-shadow: inset 5px 5px 5px blue;
+        }
+
+        #double-shadow {
+            box-shadow: inset 7px 7px 7px blue, 7px 7px 5px rgba(0, 0, 0, .5);
+        }
+
+        #all-in {
+            width: 500px;
+            height: 500px;
+            margin-left: 400px;
+            box-shadow: inset 10px -10px 10px 10px rgba(0, 0, 0, 0.6), 10px -10px 7px 10px rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="block" id="border-left"></div>
+    <div class="block" id="border-right"></div>
+    <div class="block" id="border-bottom"></div>
+    <div class="block" id="border-top"></div>
+    <div class="block" id="border-bottom-left"></div>
+    <div class="block" id="border-bottom-right"></div>
+    <div class="block" id="border-top-left"></div>
+    <div class="block" id="border-top-right"></div>
+    <div class="block" id="blur"></div>
+    <div class="block" id="padding-blur"></div>
+    <div class="block" id="inset-shadow"></div>
+    <div class="block" id="double-shadow"></div>
+    <div class="block" id="all-in"></div>
+</body>
+
+</html>
