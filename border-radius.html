@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-radius</title>
+    <style>
+        .block {
+            width: 290px;
+            height: 290px;
+            background: red;
+            margin: 20px;
+            float: left;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 20px;
+        }
+
+        #id2.block {
+            border-top-right-radius: 150px;
+            border-top-left-radius: 150px;
+        }
+
+        #id3.block {
+            border-radius: 0px;
+            border-bottom-right-radius: 150px;
+            border-bottom-left-radius: 150px;
+        }
+
+        #id4.block {
+            border-radius: 100px;
+        }
+
+        #id5.block {
+            background-color: blue;
+            border-bottom-right-radius: 50px;
+            border-top-right-radius: 0px;
+        }
+
+        #id6.block {
+            background-color: blue;
+            border-top-right-radius: 150px;
+            border-bottom-left-radius: 150px;
+            border-top-left-radius: 0px;
+        }
+
+        #id7.block {
+            background-color: blue;
+            border-top-right-radius: 190px;
+            border-top-left-radius: 190px;
+            border-bottom-right-radius: 190px;
+            border-bottom-left-radius: 190px;
+        }
+
+        #id8.block {
+            background-color: blue;
+            border-radius: 200px 200px 200px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="block"></div>
+    <div class="block" id="id2"></div>
+    <div class="block" id="id3"></div>
+    <div class="block" id="id4"></div>
+
+    <div class="block" id="id5"></div>
+    <div class="block" id="id6"></div>
+    <div class="block" id="id7"></div>
+    <div class="block" id="id8"></div>
+
+</body>
+
+</html>
