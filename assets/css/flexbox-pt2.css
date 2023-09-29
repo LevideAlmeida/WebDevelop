@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(32, 25, 25);
+}
+
+.flex-conteiner {
+    display: flex;
+    background-color: rgb(65, 52, 52);
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 640px;
+}
+
+.flex-item {
+    width: 33.33%;
+    background-color: rgb(48, 48, 248);
+}
