@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    gap: 25px;
+}
+
+.grid div {
+    background-color: rgb(255, 99, 71);
+    min-height: 100px;
+}
+
+.grid2 {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 3fr;
+    gap: 25px;
+
+}
+
+.grid2 div {
+    background-color: rgb(100, 149, 237);
+    min-height: 100px;
+}
+
+.grid3 {
+    margin: 35px auto 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+
+}
+
+.grid3 div {
+    background-color: rgb(184, 134, 11);
+    min-height: 100px;
+}
+
+.grid4 {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr 2fr;
+    gap: 25px;
+
+}
+
+.grid4 div {
+    background-color: rgb(255, 20, 147);
+    min-height: 100px;
+}
+
+.grid5 {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-rows: repeat(3, 1fr 2fr);
+    gap: 25px;
+
+}
+
+.grid5 div {
+    background-color: rgb(220, 20, 60);
+    min-height: 100px;
+}
+
+.grid6 {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+
+}
+
+.grid6 div {
+    display: flex;
+    background-color: rgb(75, 0, 130);
+    min-height: 100px;
+}
+
+.grid6 div:nth-child(10) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 8;
+}
+
+.grid7 {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+
+}
+
+.grid7 div {
+    display: flex;
+    background-color: rgb(124, 252, 0);
+    min-height: 100px;
+}
+
+.grid7 div:nth-child(5) {
+    background-color: rgb(240, 128, 128);
+    grid-row: span 3;
+    grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+    .grid7 div:nth-child(5) {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+}
